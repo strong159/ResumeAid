@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Bot</title>
+</head>
+<body>
+    <h1>Upload Resume</h1>
+    <form id="resumeForm" enctype="multipart/form-data">
+        <input type="file" name="resume" id="resume">
+        <button type="button" onclick="uploadResume()">Upload</button>
+    </form>
+    <div id="questions"></div>
+    
+    <h1>Record Response</h1>
+    <textarea id="response" rows="4" cols="50"></textarea>
+    <button type="button" onclick="recordResponse()">Submit Response</button>
+    <div id="responseStatus"></div>
+
+    <script>
+        function uploadResume() {
+            var formData = new FormData();
+            formData.append('resume', document.getElementById('resume').files[0]);
+            fetch('/upload_resume', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.json()).then(data => {
+                document.getElementById('questions').innerText = JSON.stringify(data.questions, null, 2);
+            });
+        }
+
+        function recordResponse() {
+            var response = document.getElementById('response').value;
+            fetch('/record_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({response: response})
+            }).then(response => response.json()).then(data => {
+                document.getElementById('responseStatus').innerText = data.status;
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+{
+    "application_id": 1,
+    "job_id": 101,
+    "profile_id": 201,
+    "application_date": "2024-07-24",
+    "status": "APPLICATION_SUBMITTED",
+    "is_deleted": false,
+    "job": {
+      "job_id": 101,
+      "client_id": 1001,
+      "title": "Software Engineer",
+      "description": "Google is looking for a talented Software Engineer to join our team. The ideal candidate will have experience in developing scalable software solutions and working with cross-functional teams.",
+      "type": "Full-Time",
+      "skills_required": "Python, Java, C++, Distributed Systems, Machine Learning",
+      "locations": "Mountain View, CA",
+      "language_preferences": "English",
+      "salary_min": "120000",
+      "salary_max": "180000",
+      "opening_positions": 5,
+      "posting_date": "2024-07-01",
+      "closing_date": "2024-08-01",
+      "status": "Open",
+      "jd_text": "As a Software Engineer at Google, you will work on complex technical challenges and build innovative software solutions. Responsibilities include designing, coding, and testing software solutions, collaborating with team members, and contributing to the continuous improvement of our products.",
+      "certifications_required": "None",
+      "is_deleted": false
+    },
+    "profile": {
+      "profile_id": 201,
+      "first_name": "John",
+      "last_name": "Doe",
+      "date_of_birth": "1990-05-15",
+      "email": "john.doe@example.com",
+      "phone_number": "+1-555-123-4567",
+      "date_joined": "2024-07-24",
+      "resume_path": "/path/to/resume.pdf",
+      "is_deleted": false,
+      "addresses": [
+        {
+          "address_id": 301,
+          "profile_id": 201,
+          "address_type": "Home",
+          "street_address": "123 Main St",
+          "city": "San Francisco",
+          "state": "CA",
+          "postal_code": "94105",
+          "country": "USA",
+          "is_deleted": false
+        }
+      ],
+      "certifications": [
+        {
+          "certification_id": 401,
+          "profile_id": 201,
+          "certification_name": "AWS Certified Solutions Architect",
+          "issuing_organization": "Amazon Web Services",
+          "date_issued": "2022-10-01",
+          "date_expiry": "2025-10-01",
+          "is_deleted": false
+        }
+      ],
+      "qualifications": [
+        {
+          "qualification_id": 501,
+          "profile_id": 201,
+          "degree": "Bachelor of Science",
+          "institution": "Stanford University",
+          "field_of_study": "Computer Science",
+          "graduation_year": "2012",
+          "is_deleted": false
+        },
+        {
+          "qualification_id": 502,
+          "profile_id": 201,
+          "degree": "Master of Science",
+          "institution": "MIT",
+          "field_of_study": "Artificial Intelligence",
+          "graduation_year": "2014",
+          "is_deleted": false
+        }
+      ],
+      "skills": [
+        {
+          "skill_id": 601,
+          "profile_id": 201,
+          "skill_name": "Python",
+          "proficiency_level": "Expert",
+          "is_deleted": false
+        },
+        {
+          "skill_id": 602,
+          "profile_id": 201,
+          "skill_name": "Java",
+          "proficiency_level": "Advanced",
+          "is_deleted": false
+        },
+        {
+          "skill_id": 603,
+          "profile_id": 201,
+          "skill_name": "C++",
+          "proficiency_level": "Advanced",
+          "is_deleted": false
+        },
+        {
+          "skill_id": 604,
+          "profile_id": 201,
+          "skill_name": "Distributed Systems",
+          "proficiency_level": "Advanced",
+          "is_deleted": false
+        },
+        {
+          "skill_id": 605,
+          "profile_id": 201,
+          "skill_name": "Machine Learning",
+          "proficiency_level": "Advanced",
+          "is_deleted": false
+        }
+      ],
+      "social_media": [
+        {
+          "social_media_id": 701,
+          "profile_id": 201,
+          "platform_name": "LinkedIn",
+          "profile_url": "https://www.linkedin.com/in/johndoe",
+          "is_deleted": false
+        },
+        {
+          "social_media_id": 702,
+          "profile_id": 201,
+          "platform_name": "GitHub",
+          "profile_url": "https://github.com/johndoe",
+          "is_deleted": false
+        }
+      ],
+      "work_experience": [
+        {
+          "experience_id": 801,
+          "profile_id": 201,
+          "job_title": "Software Engineer",
+          "company_name": "Facebook",
+          "start_date": "2014-06-01",
+          "end_date": "2018-05-31",
+          "job_responsibilities": "Developed and maintained scalable software solutions, collaborated with cross-functional teams to design new features, optimized code for performance and reliability.",
+          "is_deleted": false
+        },
+        {
+          "experience_id": 802,
+          "profile_id": 201,
+          "job_title": "Senior Software Engineer",
+          "company_name": "Amazon",
+          "start_date": "2018-06-01",
+          "end_date": "2024-06-30",
+          "job_responsibilities": "Led a team of software engineers, designed and implemented distributed systems, integrated machine learning models into production, mentored junior engineers.",
+          "is_deleted": false
+        }
+      ]
+    }
+  }

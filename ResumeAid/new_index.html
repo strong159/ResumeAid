@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Bot</title>
+</head>
+<body>
+    <h1>Interview Bot</h1>
+    <form id="upload-form">
+        <input type="file" id="resume" name="resume" accept="application/pdf">
+        <button type="submit">Upload Resume</button>
+    </form>
+
+    <div id="interview-section" style="display: none;">
+        <h2>Interview Questions</h2>
+        <form id="interview-form">
+            <input type="file" id="response" name="response" accept="audio/*">
+            <button type="submit">Submit Response</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("upload-form").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById("resume");
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            const response = await fetch("/upload_resume", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                document.getElementById("interview-section").style.display = "block";
+            } else {
+                alert("Failed to upload resume.");
+            }
+        });
+
+        document.getElementById("interview-form").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById("response");
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            const response = await fetch("/interview", {
+                method: "POST",
+                body: formData
+            });
+
+            if (!response.ok) {
+                alert("Failed to submit response.");
+            }
+        });
+    </script>
+</body>
+</html>

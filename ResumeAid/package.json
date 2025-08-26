@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-media-recorder": "^1.6.6",
+    "react-recorder": "^1.0.0"
+  }
+}

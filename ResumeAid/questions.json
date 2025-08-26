@@ -1,0 +1,17 @@
+[
+    {
+        "questionText": "1. Can you provide an example from your experience at Facebook where you had to collaborate with cross-functional teams to design new features for a software solution? How did you ensure effective communication and successful implementation?"
+    },
+    {
+        "questionText": "2. As a Senior Software Engineer at Amazon, you led a team of engineers. Can you discuss a specific instance where you successfully mentored junior engineers, and how this impacted the overall performance of the team?"
+    },
+    {
+        "questionText": "3. Google is seeking a Software Engineer with experience in developing scalable software solutions. Could you walk me through a project at Facebook where you were responsible for optimizing code for performance and reliability, and the impact it had on the final product?"
+    },
+    {
+        "questionText": "4. Working on distributed systems and integrating machine learning models into production were key responsibilities at Amazon. Can you elaborate on a challenging project where you designed and implemented a distributed system, including the technical approach you took and any hurdles you had to overcome?"
+    },
+    {
+        "questionText": "5. The ideal candidate for this role should have the ability to work in a fast-paced environment and deliver high-quality results. Can you share a situation from your work experience where you had to meet tight deadlines while ensuring the quality of the software solution was not compromised?"
+    }
+]
