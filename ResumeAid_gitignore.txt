@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+
+# Node (if any frontend sub-app)
+node_modules/
+dist/
+build/
+
+# Editor
+.vscode/
+
+# Logs
+*.log
